@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(234, 29%, 20%);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+/* **MAIN CONTAINER*** */
+.main-container {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  width: 900px;
+  margin: 220px auto 30px;
+  padding: 20px 20px 20px 50px;
+  display: flex;
+  align-items: center;
+  column-gap: 70px;
+}
+h1 {
+  font-size: 55px;
+  margin-bottom: 22px;
+}
+p {
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.benefit-box {
+  margin-bottom: 30px;
+}
+.benefit-box__content {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 17px;
+  align-items: center;
+}
+.benefit-box__content span {
+  color: hsl(234, 29%, 20%);
+}
+/* ***FORM*** */
+
+form {
+  width: 100%;
+}
+
+.label-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label-box > span {
+  color: hsl(4, 100%, 67%);
+}
+
+input {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding: 20px;
+  border: 1px solid hsla(231, 7%, 60%, 0.5);
+  cursor: pointer;
+  color: hsl(231, 7%, 60%);
+  border-radius: 8px;
+}
+.error-msg {
+  display: none;
+  font-weight: 400;
+}
+
+.btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  width: 100%;
+  display: block;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(234, 29%, 20%);
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: hsl(4, 100%, 67%);
+  box-shadow: 8px 8px 18px hsl(4, 100%, 67%);
+}
+
+.btn:active {
+  background-color: hsl(4, 100%, 67%);
+}
+/* ****Modal **** */
+.modal {
+  display: none;
+  width: 500px;
+  margin: 270px auto;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  padding: 80px;
+}
+h2 {
+  margin: 40px 0 30px;
+}
+.modal p {
+  margin-bottom: 50px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 1000px) {
+  .main-container {
+    flex-direction: column-reverse;
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main-container {
+    flex-direction: column-reverse;
+    padding: 0px 0px 20px 0px;
+    column-gap: 0px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .main-container {
+    margin: 0 0 0 0;
+    width: 100%;
+  }
+
+  .modal p {
+    margin-bottom: 280px;
+  }
+}
