@@ -15,6 +15,7 @@ btnSubmit.addEventListener("click", function (e){
         
         errorMsg.style.display = "block";
         errorField.style.color = "hsl(4,100%,67%)";
+        inputField.style.color = "hsl(4,100%,67%)";
         errorField.style.border = "2px solid hsl(4,100%,67%)";
     }
     else {

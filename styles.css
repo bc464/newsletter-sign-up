@@ -64,6 +64,7 @@ input {
   cursor: pointer;
   color: hsl(231, 7%, 60%);
   border-radius: 8px;
+  outline: none;
 }
 .error-msg {
   display: none;
